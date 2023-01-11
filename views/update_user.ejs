@@ -1,29 +1,22 @@
 <!-- include header -->
-<%-include('include/_header')%>
+<%- include('include/_header') %>
 <!-- /include header -->
 
-   <!-- main -->
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+           <div class="filter">
+               <a href="/"><i class="fas fa-angle-double-left"></i> All Users</a>
+           </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update User</h2>
+            <span class="text-light">Use the below form to Update an account</span>
+        </div>
 
-    <main id="site-main">
-        <div class="container">
-            <div class="box-nav d-flex justify-between">
-                <div class="filter">
-                    <a href="/">
-                        <span class=""><i class="fa-solid fa-angles-left"></i></i>All Users</span>
-                    </a>
-                </div>
-            </div>
-            <div class="form-title text-center">
-                <h2 class="text-dark">Update User</h2>
-                <span class="text-light">Use the below to Update an account</span>
-            </div>
-
-
-
-           <!-- add user form -->
-
-            <!-- Form handling -->
-
+        <!-- add user form -->
+         <!-- form handling -->
  <form method="POST" id="update_user">
     <div class="new_user">
         <div class="form-group">
@@ -65,16 +58,11 @@
 
     </div>
 </form>
-
-<!-- /Form handling -->
-
-<!-- add user form  -->
-
-        </div>
-    </main>
-
-    <!-- /main -->
+       
+    </div>
+</main>
+<!-- /Main Site -->
 
 <!-- include footer -->
-<%-include('include/_footer')%>
-<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
